@@ -5,6 +5,7 @@
         [useful.macro :only [with-altered-var]]
         [clojure.string :only [split join]]
         [ego.core :only [type-key]]
+        useful.debug
         [jiraph.wrapper :only [*read-wrappers* *write-wrappers*]]
         [useful.experimental :only [wrap-multiple]])
   (:require [jiraph.layer :as layer]

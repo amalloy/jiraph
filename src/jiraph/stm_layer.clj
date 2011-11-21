@@ -5,6 +5,7 @@
         [jiraph.graph     :only [*skip-writes*]]
         [retro.core       :only [WrappedTransactional Revisioned
                                  get-queue at-revision current-revision empty-queue]]
+        useful.debug
         [useful.fn        :only [given fix]]
         [useful.utils     :only [returning or-min]]
         [useful.map       :only [keyed]]
