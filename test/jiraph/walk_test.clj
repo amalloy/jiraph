@@ -4,8 +4,7 @@
         [jiraph.walk :only [defwalk path paths *parallel-follow* intersection]]
         [useful.utils :only [adjoin]]
         [jiraph.walk.predicates :only [at-limit]])
-  (:require [jiraph.stm-layer :as stm])
-  (:import [jiraph Test$Node]))
+  (:require [jiraph.stm-layer :as stm]))
 
 (defn test-graph []
   {:foo (stm/make)

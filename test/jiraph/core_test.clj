@@ -244,7 +244,7 @@
         (is (edges-valid? :stm2 {:edge {:id "1"}}))
         (is (not (edges-valid? :stm2 {:edges {"1" {:a "b"}}}))))))
 
-  (deftest test-node-valid-node-assert
+  #_(deftest test-node-valid-node-assert
     (with-graph {:a (with-meta (bal/make (tokyo/make {:path "/tmp/jiraph-test-a" :create true})
                                          (paf/make Test$Node))
                       {:types {:foo #{:baz} :bar #{:baz}} :single-edge true})}
@@ -268,7 +268,7 @@
         (is (node-valid? :a "bar-1" {:edge {:id "baz-1"} :baz 1119}))
         (is (nil? (verify-node :a "foo-1" {:edge {:id "baz-2"} :bar "foo"}))))))
 
-  (deftest test-fields-and-schema
+  #_(deftest test-fields-and-schema
     (with-graph {:a (with-meta (bal/make (tokyo/make {:path "/tmp/jiraph-test-a" :create true})
                                          (paf/make Test$Node))
                       {:types #{:foo :bar}})
